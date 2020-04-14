@@ -1,38 +1,79 @@
+html, body, #root, .App {
+	height: 100%;
+}
+
+html {
+	background: #1d191f;
+}
+
+body {
+	margin: 0;
+  font-family:"Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	text-align:center;
+	color: white;
+}
+
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#inputWrapper{
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	white-space: nowrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#todoInput {
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	border-style: solid;
+	border-color: #8080804f;
+	background: transparent;
+	padding: 0.5rem;
+	width: 65%;
   color: white;
+  margin-left: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+#todoBtn {
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	background: #9247ff;
+	border-radius: 0.5rem;
+	margin-left: 0.5rem;
+	border-style: solid;
+	border-color: #8080804f;
+	cursor: pointer;
+	width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#todosWrapper {
+	min-height: 1rem;
+	background: #7a627d80;
+	width: 50%;
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.todoItem {
+	text-align: left;
+	background: #635a77e6;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.todoItem:hover {
+	background: #8674abe6;
 }
